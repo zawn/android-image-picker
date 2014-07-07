@@ -113,7 +113,7 @@ public class ImageZip {
                     } catch (IOException e) {
                     }
                 }
-                if (bitmap != null && bitmap.isRecycled()) {
+                if (bitmap != null && !bitmap.isRecycled()) {
                     bitmap.recycle();
                 }
             }
